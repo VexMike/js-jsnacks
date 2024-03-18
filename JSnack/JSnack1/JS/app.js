@@ -4,14 +4,14 @@ console.log('JS Snacks 1')
 // - Stampare il maggiore.
 
 // Aggiungere primo numero con prompt
-const nr1 = parseFloat(prompt('Inserisci un numero'));
+const nr1 = parseFloat(prompt('Inserisci un numero')); // Number
 // console.log(nr1);
 
 // Aggiungere secondo numero con prompt
-const nr2 = parseFloat(prompt('Inserisci un numero'));
+const nr2 = parseFloat(prompt('Inserisci un numero')); // Number
 // console.log(nr2);
 
-// SE i dati inseriti sono validi:
+// Validare i dati inseriti:
 !isNaN(nr1);
 !isNaN(nr2);
 
