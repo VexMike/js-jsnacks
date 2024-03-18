@@ -10,17 +10,23 @@ const nomi = ['Mario', 'Luigi', 'Daisy', 'Boo', 'Bowser'];
 
 //Chiediamo all'utente il nome
 const nomeInvitato = prompt('Mi dica il suo nome');
-console.log(nomeInvitato);
+// console.log(nomeInvitato);
+
+// In questo momento il nome non è stato verificato quindi non è presente
+let invito = false;
 
 // Verifichiamo se l'utente è nella lista
 
-for (i = 0; i < nomi; i++) {
+for (i = 0; i < nomi.length; i++) {
     if (nomi[i] === nomeInvitato) {
-        console.log('Il signor' + nomeInvitato + 'può entrare');
+        invito = true;
         break;
     }
-    // Se non è nella lista
-    else {
-        alert('Non puoi entrare')
-    }
+}
+
+// Avviso l'utente se può o non può entrare
+if (invito) {
+    console.log('Benvenuto alla festa!');
+} else {
+    console.log('Il suo nome non è nella lista non può entrare, mi dispiace.')
 }
