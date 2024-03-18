@@ -4,13 +4,16 @@ console.log('JS Snacks 3')
 // - Il programma stampa la somma di tutti i numeri.
 
 // Inseriamo la variabile
-let numero1 = 0;
-// console.log(somma)
+let num1 = 0;
+// console.log(num1)
 
 // Chiediamo 10 volte un numero all'utente
 for (let i = 0; i < 10; i++) {
-    numero2 = parseInt(prompt('Inserisci un numero'));
-    somma = numero1 +numero2
+    // while (isNaN(num1)) {
+    //     num1 = prompt('Dati inseriti non validi: inserisci un numero')
+    // }
+    const num2 = prompt('Inserisci un numero');
+    num1 += parseFloat(num2);
 }
 
-console.log('Somma totale dei numeri inseriti: ')
+console.log('Somma totale dei numeri inseriti: ', num1)
