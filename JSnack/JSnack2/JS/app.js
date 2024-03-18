@@ -1,30 +1,33 @@
-console.log('JS Snacks 2')
+console.log("JS Snacks 2");
 
 // Inserire due parole in successione con 2 prompt.
 // - Stampare la prima parola più corta, poi la più lunga.
 
 // Aggiungere 1a variabile parola con prompt
-let par1 = prompt('Inserisci la parola'); // String
+const par1 = prompt("Inserisci la parola"); // String
 // console.log(par1);
 
 // Aggiungere 2a variabile con prompt
-let par2 = prompt('Inserisci la parola'); // String
+const par2 = prompt("Inserisci la parola"); // String
 // console.log(par2);
 
-// Validare i dati inseriti:
-par1 = ;
-par2 = ;
+// SE par1 e par2 sono stringhe
 
-// Inserisco la prima parola e SE
-if (par1.length < par2.length) {
-    console.log(par1, par2);
-}
+if (isNaN(par1) && isNaN(par2)) {
+  // Inserisco la prima parola e SE
+  const par1Lungh = par1.length;
+  const par2Lungh = par2.lenght;
 
-// ALTRIMENTI SE inserisco la seconda parola
-else if (par2.length < par1.length) {
-    console.log(par2, par1);
-}
+  if (par1Lungh < par2Lungh) {
+    console.log(par1Lungh, par2Lungh);
+  }
 
-else {
-    alert('Dati inseriti non validi')
+  // ALTRIMENTI SE inserisco la seconda parola
+  else if (par2Lungh < par1Lungh) {
+    console.log(par2Lungh, par1Lungh);
+  }
+
+  // ALTRIMENTI i dati inseriti non sono validi
+} else {
+  alert("Dati inseriti non validi");
 }

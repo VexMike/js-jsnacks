@@ -15,8 +15,8 @@ const nr2 = prompt("Inserisci un numero"); // String
 
 if (!isNaN(nr1) && !isNaN(nr2)) {
   // Inserisci il primo numero e SE
-    const nr1Float = parseFloat(nr1);
-    const nr2Float = parseFloat(nr2);
+    const nr1Float = parseFloat(nr1); // Number
+    const nr2Float = parseFloat(nr2); // Number
 
   if (nr1Float > nr2Float) {
     console.log(nr1Float);
