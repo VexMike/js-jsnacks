@@ -21,6 +21,6 @@ do {
 // Dico all'utente se ha vinto o perso
 if (numeroUtente === numeroComputer) {
   alert("Hai vinto! Il numero è: " + numeroComputer);
-} else {
+} else if (numeroUtente !== numeroComputer) {
   alert("Hai perso! Il numero è: " + numeroComputer);
 }

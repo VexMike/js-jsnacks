@@ -7,6 +7,7 @@ console.log('JS Snacks 4')
 
 // Lista invitati
 const nomi = ['Mario', 'Luigi', 'Daisy', 'Boo', 'Bowser'];
+// console.log(nomi);
 
 //Chiediamo all'utente il nome
 const nomeInvitato = prompt('Mi dica il suo nome');
@@ -26,7 +27,8 @@ for (i = 0; i < nomi.length; i++) {
 
 // Avviso l'utente se può o non può entrare
 if (invito) {
-    console.log('Benvenuto alla festa!');
+    console.log('Benvenuto/a alla festa!');
 } else {
     console.log('Il suo nome non è nella lista non può entrare, mi dispiace.')
 }
+

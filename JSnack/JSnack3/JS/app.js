@@ -16,4 +16,4 @@ for (let i = 0; i < 10; i++) {
     num1 += parseFloat(num2);
 }
 
-console.log('Somma totale dei numeri inseriti: ', num1)
+console.log('Somma totale dei numeri inseriti: ', num1, typeof num1);
